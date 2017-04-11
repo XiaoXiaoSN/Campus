@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="valign-wrapper" style="height: 100vh">
+	  <div class="row" style="width: 100vw; margin-top: -250px;">
+	    <form class="col s12" onsubmit="return false">
+	      <div class="row">
+	        <div class="input-field col s12 ui search">
+	          <input id="search" type="text" class="c-prompt white-text noto" name="search" style="font-weight:300">
+	          <label for="search" class="typedHere noto">尋找課程</label>
+	        </div>
+	      </div>
+	    </form>
+	  </div>
+   </div>
+</div>
+
+
+
+<!-- Modal Structure -->
+<div id="s-f-r-m" class="modal">
+    <div id="s-f-r-m-p" style="display: none">
+        <li data-id="{{data-ID}}" style="margin: 0px">
+            <div class="collapsible-header truncate"><i class="material-icons {{ID}}-icon ">&#xE5CF;</i>{{Header}}</div>
+            <div class="collapsible-body">
+                <p class='noto300'>
+                    <a href="/Course/{{link-ID}}"  class="wave-effect waves-light btn right orange accent-2">
+                        <i class=" material-icons right">keyboard_arrow_right</i>
+                        更多結果
+                    </a>
+                    {{Body}}
+                </p>
+            </div>
+
+        </li>
+    </div>
+    
+    <div class="modal-content" style="padding:0px;">
+        <ul class="collapsible popout s-f-r" data-collapsible="expandable">
+        </ul>
+        <ul class="center popout">
+            <li class="noto300" id="more-meg">
+                沒有更多了喔
+            </li>
+        </ul>
+    </div>
+</div>
+{{Script}}
+

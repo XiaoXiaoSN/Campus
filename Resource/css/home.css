@@ -1,0 +1,25 @@
+body {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #212121 ;
+    background-image: url("/Resource/image/Background2.jpg"); 
+}
+
+.button-collapse {
+	display:none!important;
+}
+.h20{
+	height:20px!important;
+}
+.sWidth{
+	width: 150px;
+}
+.mWidth{
+	width: 225px;
+}
+.lWidth{
+	width: 300px;
+}

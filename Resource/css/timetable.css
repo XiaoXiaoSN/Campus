@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+.Timetable {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+.Timetable tr {
+  //background: #00998a;
+}
+.Timetable tr:nth-child(even) {
+  //background: #00998a;
+}
+.Timetable .Timetable__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Timetable .Timetable__table td,
+.Timetable .Timetable__table th {
+  padding: 4px 2px;
+}
+.Timetable .Timetable__table th {
+  font-weight: 300;
+  height: 65px;
+}
+.Timetable .Timetable__table tbody th {
+  //border-right: 1px solid #00998a;
+}
+.Timetable .Timetable__table tbody td {
+  //border: 1px solid #00998a;
+}
+.Timetable .Timetable__table .Timetable__time,
+.Timetable .Timetable__table .Timetable__room {
+  background: #00665c;
+  color: #fff;
+}
+.Timetable .Timetable__table .Timetable__room {
+  //border-bottom: 1px solid #00998a;
+}
+.Timetable .Timetable__table .Timetable__time th {
+  width: 100px;
+}
+.Timetable thead tr {
+  background: #191970;
+}
+.Timetable thead tr td,
+.Timetable thead tr th {
+  color: #fff;
+  font-size: 1.5em;
+}
+.Allocation {
+  display: block;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: rgba(0,0,0,0.34) 0 1px 3px;
+  color: #fff;
+  height: 65px;
+}
+.Allocation.major {
+  background: #e67733;
+}
+.Allocation.elective {
+  background: #e6b933;
+}
+.Allocation.knowl {
+  background: #338ce6;
+}
+.Allocation.sports {
+  background: #e6335f;
+}
+.Allocation.sup {
+  background: #8c33e6;
+}
+.Allocation span {
+  display: block;
+  padding: 3px 0;
+}
+.Allocation span.Allocation__title {
+  font-size: 1.3em;
+  font-weight: 600;
+}

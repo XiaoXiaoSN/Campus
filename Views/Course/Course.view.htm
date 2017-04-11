@@ -1,0 +1,136 @@
+<div class="row container" style="margin-top:80px;">
+	<div class="container">
+		<div class="row" style="margin-bottom:0">
+			<div class="col s12">
+				<div class="card" style="margin-bottom:0">
+					<div class="center-align card-content white orange-text text-darken-4" style="font-size:20pt;font-weight:500">
+						{{CourseName}}
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="row">
+    	<div class="extra content">
+     		<a>
+		        <div class="ui top attached tabular menu">
+		            <a class="item active" data-tab="tab1">課程分數</a>
+		            <a class="item" data-tab="tab2">介紹</a>
+		            <a class="item" data-tab="tab3">上課模式</a>
+		            <a class="item" data-tab="tab4">評分方式</a>
+		            <a class="item" data-tab="tab5">相關連結</a>
+		        </div>
+		        
+		        <div class="ui bottom attached segment tab active" data-tab="tab1">
+		        </div>
+
+		        <div class="ui bottom attached segment tab active" data-tab="tab2">
+					<div class="row">
+						<div class="col s12">
+							<div class="card darken-1 blurring mainPanel" style="background-color:rgba(255, 255, 255, 0.92);">
+								<div class="ui inverted dimmer active"></div>
+								<div class="card-content black-text container">
+									<div class="ui three column grid centered stackable">
+										<div class="row">
+											<div class="column center aligned">
+												<i class="columns icon green" style="font-size:30px"></i><br>
+												<div class="ui header" style="margin-top:0 ">{{SelectType}}
+												<div class="sub header">選別</div></div>
+											</div>
+											<div class="column center aligned">															
+												<i class="travel icon purple" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{Department}}
+												<div class="sub header">開課單位</div></div>	
+											</div>
+										</div>												
+										<div class="row">
+											<div class="column center aligned">
+												<i class="bug icon red" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{Term}}
+												<div class="sub header">學制</div></div>
+											</div>
+											<div class="column center aligned">
+												<i class="food icon orange" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{Points}}
+												<div class="sub header">學分數</div></div>
+											</div>	
+											<div class="column center aligned">
+												<i class="world icon yellow" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{Language}}
+												<div class="sub header">授課語言</div></div>	
+											</div>
+										</div>
+										<div class="row">
+											<div class="column center aligned">
+												<i class="wait icon blue" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{CourseTime}}
+												<div class="sub header">開課時間</div></div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="column center aligned">
+												<i class="child icon olive" style="font-size:30px"></i><br>
+												<div class="ui header" style="margin-top:0 ">{{InDepart}}
+												<div class="sub header">開課人數</div></div>
+											</div>
+											<div class="column center aligned">
+												<i class="street view icon pink" style="font-size:30px"></i>
+												<div class="ui header" style="margin-top:0 ">{{OutDepart}}
+												<div class="sub header">外系名額</div></div>	
+											</div>
+											<div class="column center aligned">
+												<i class="add user icon teal" style="font-size:30px"></i><br>
+												<div class="ui header" style="margin-top:0 ">{{Attributes}}
+												<div class="sub header">可否加退</div></div>
+											</div>
+										</div>
+									</div>
+									{{Expert}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+ 				<div class="ui bottom attached segment tab" data-tab="tab3">
+					<div class="row">
+						<div class="col s12">
+							<div class="card blue-text darken-1 mainPanel" style="background-color:rgba(255, 255, 255, 0.92);">
+								<div class="card-content black-text">
+									<canvas id="chart1" width="400" height="150"></canvas>
+									<canvas id="chart2" width="400" height="150"></canvas>
+									<!-- <ul>
+										<li><a class="noto" href="#">課程大綱</a></li>
+										<li>課程評量</li>
+									</ul> -->
+
+								</div>
+							</div>
+						</div>
+					</div>		
+ 				</div>
+
+ 				<div class="ui bottom attached segment tab" data-tab="tab4">
+					<div class="card blue-text darken-1 mainPanel" style="background-color:rgba(255, 255, 255, 0.92);">
+						<div class="card-content black-text">
+							
+						</div>
+					</div>
+ 				</div>
+
+ 				<div class="ui bottom attached segment tab" data-tab="tab5">
+ 				這裡是tab5
+ 				</div>
+      		</a>
+    	</div>
+ 	</div>
+<!-- 				
+教授:{{Professor}}
+教授專長:{{Expert}}
+學期{{SelectType}}
+學分:{{Points}}
+必選修{{Term}}
+授課語言:{{Language}}
+上課時間:{{CourseTime}}
+上課地點:{{Section}}
+ -->
+{{Script}}

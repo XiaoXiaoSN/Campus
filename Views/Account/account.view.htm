@@ -1,0 +1,68 @@
+
+<div id="login-mod" class="ui modal coupled">
+    <div class="content">
+        <div class="ui container">
+            <div class="ui stackable two column divided grid">
+                <div class="row" style="width: 50vw;">
+                    <div class="column">
+                        <img class="ui centered segment image" style="width: 40vw" src="/Resource/image/meat1.jpg">
+                    </div>
+                    <div class="ui column">
+                        <img class="ui centered image" style="width:20vw" src="/Resource/image/tenoz.png">
+                        <form class="ui fluid form" onsubmit="return false;">
+                            <div class="row">
+                                <div class="input-field column ">
+                                    <input type="text" class="note300" name="account">
+                                    <label class="noto">帳號</label>
+                                </div>
+                                <div class="input-field column" id="PW"></div>
+                                <button class="ui right floated teal basic button next-button" onclick="NextStep()">下一步</button>
+                                <button class="ui left floated grey basic button togglebtn" onclick="ToggleModal()">沒有帳號嗎？點我註冊</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="signup-mod" class="ui modal coupled">
+    <div class="content">
+        <div class="ui stackable two column divided grid container">
+            <div class="row" style="width: 80vw;">
+                <div class="column">
+                    <img class="ui centered segment image" style="width: 40vw" src="/Resource/image/meat2.jpg">
+                </div>
+                <div class="column">
+                    <img class="ui centered image" style="width:20vw" src="/Resource/image/tenoz.png">
+                    <form class="ui fluid form"  >
+                        <div class="ui two column doubling grid container">
+                            <div class="inline field">
+                                <input type="text" class="note300 " name="signup_acc" placeholder="請輸入帳號">
+                                    <div id="errorMesgAcc" class="ui left pointing right basic label" for="signup_acc">
+                                        帳號長度至少6位
+                                    </div>
+                            </div>
+                            <div class="field">
+                                <input type="password" class="note300 " name="signup_pw" placeholder="請輸入密碼">
+                                <div id="errorMesgPw" class="ui pointing basic label ">
+                                    請輸入6位以上數字及英文，英文大小寫區分
+                                </div>
+                                <div id="errorMesgPwa"></div>
+                            </div>
+                            <div class="field">
+                                <input type="password" class="note300 " name="signup_pwa" placeholder="再次輸入密碼">
+                            </div>
+                            <div class="inline field">
+                                <div id="errorMesgMail"></div>
+                                <input type="text" class="note300 " name="signup_mail" placeholder="請輸入您的信箱">
+                            </div>
+                            <button class="ui right floated teal basic button" type="submit" onclick="signup();">來人，給我新帳號(ㅅˇㅂˇ)</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

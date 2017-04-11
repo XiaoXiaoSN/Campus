@@ -1,0 +1,3 @@
+flatpickr(".flatpickr", {
+    enableTime: true,
+});

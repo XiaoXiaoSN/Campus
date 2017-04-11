@@ -1,0 +1,42 @@
+
+
+table.schedule th {
+    width: 100px;
+    text-align: center;
+}
+
+table.schedule td {
+    text-align: center;
+    height: 63px;
+}
+
+.course {
+    float: left;
+    color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /*border:1px solid rgba(53,53,53,0.8);*/
+    background-color: rgb(72, 171, 70);
+    opacity: 0.8;
+    text-align: center;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.priority {
+    color: white;
+    background-color: rgb(87, 80, 139);
+}
+
+.error_tag {
+    color: white;
+    background-color: #49769C;
+}
+
+.conflict {
+    color: white;
+    background-color: #D95C5C;
+}

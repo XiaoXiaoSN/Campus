@@ -1,0 +1,25 @@
+#<FilesMatch "\.htaccess">
+
+#    Require all denied
+
+#</FilesMatch>
+
+AddType application/vnd.ms-fontobject    .eot
+AddType application/x-font-opentype      .otf
+AddType image/svg+xml                    .svg
+AddType application/x-font-ttf           .ttf
+AddType application/font-woff            .woff
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#REWRITE RULES
+#---------------------
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1 !^(index\.css|ico|js|woff|ttf|eot|woff2|svg|png|jpg|gif|robots\.txt)
+RewriteRule ^(.*)$ index.php?uri=$0 [L,QSA]
+
+
+

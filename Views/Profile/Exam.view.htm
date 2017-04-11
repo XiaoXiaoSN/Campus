@@ -1,0 +1,357 @@
+<div class="ui container" style="margin-top:80px">
+    <div class="Timetable">
+        <table class="ui definition table">
+          
+          <tbody>
+            <tr class="center aligned">
+              <td class="Timetable__room"></td>
+              <td>08:10 - 09:00</td><!--1-->
+              <td>09:10 - 10:00</td><!--1-->
+              <td>10:10 - 11:00</td><!--1-->
+              <td>11:10 - 12:00</td><!--1-->
+              <td>13:40 - 14:30</td><!--1-->
+              <td>14:40 - 15:30</td><!--1-->
+              <td>15:40 - 16:30</td><!--1-->
+              <td>16:40 - 17:30</td><!--1-->
+              <td>17:40 - 18:30</td><!--1-->
+              
+            </tr>
+
+            <tr>
+              <td class="Timetable__room center aligned">Today</td>
+              
+              <td colspan="2"><!--節數-->
+                <div class="Allocation major">
+                  <span class="Allocation__title">major</span>
+                  <span class="Allocation__tutor">classroom</span>
+                </div>
+              </td>
+              <td colspan="2">
+                <div class="Allocation elective">
+                  <span class="Allocation__title">elective</span>
+                  <span class="Allocation__tutor">classroom</span>
+                </div>
+              </td>
+              <td colspan="2">
+                <div class="Allocation sports">
+                  <span class="Allocation__title">sports</span>
+                  <span class="Allocation__tutor">classroom</span>
+                </div>
+              </td>
+              <td colspan="2">
+                <div class="Allocation knowl">
+                  <span class="Allocation__title">knowl</span>
+                  <span class="Allocation__tutor">classroom</span>
+                </div>
+              </td>
+              <td colspan="1">
+                <div class="Allocation sup">
+                  <span class="Allocation__title">sup</span>
+                  <span class="Allocation__tutor">classroom</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="Timetable__room center aligned">Tomorrow</td>
+              
+              <td colspan="1"></td>
+              <td colspan="2"><!--節數-->
+                <div class="Allocation">
+                  <span class="Allocation__title">PDP</span>
+                  <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                </div>
+              </td>
+              <td colspan="2"></td>
+              <td colspan="4">
+                <div class="Allocation">
+                  <span class="Allocation__title">SEO</span>
+                  <span class="Allocation__tutor">Dr. Joe Web</span>
+                </div>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </div>
+    <div class="ui grid" style="margin-top:10px">
+        <div class="four wide computer nine wide tablet six wide mobile column">
+          <div class="ui segment">
+            <img class="ui small centered image" src="http://i.imgur.com/AYMaRch.gif" onclick="$(this).transition('jiggle');"><!--MainPicture-->
+            <br>
+            <div class="ui black ribbon label">
+              初心者
+            </div>
+            <div class="ui center aligned container">
+              <h1>walala</h1><!--name-->
+              
+              <p>student</p><br><br>
+              <div class="ui clearing divider"></div>
+              <div class="ui divided items">
+                <div class="item"><!--課表-->
+                  <div class="content">
+                    <i class="calendar icon"></i>
+                    <a class="header" onclick="$('.small.modal.timetable').modal('show')">TIMETABLE</a>
+                  </div>
+                </div>
+                <div class="item"><!--近期作業-->
+                  <div class="content">
+                    <i class="write icon"></i><a href="/studentID/homework" class="header">HOMEWORK</a>
+                  </div>
+                </div>
+                <div class="item"><!--近期考試-->
+                  <div class="content">
+                    <i class="idea icon"></i><a href="/studentID/exam" class="header">EXAM</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="twelve wide column" id="main1">
+          <div class="ui segment">
+
+            <div class="ui divided items">
+              <h3 class="ui center aligned header">
+                <div class="ui divided items">
+                  <div class="item"><!--近期考試-->
+                    <div class="content">
+                      <i class="write icon"></i><a href="" class="header">EXAM</a>
+                    </div>
+                    <i class="edit link icon" onclick="$('.small.modal.edit').modal('show')"></i>
+                  </div>
+                </div>
+              </h3>
+                <div class="item">
+                    <div class="ui tiny image">
+                      <img src="/images/wireframe/image.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">class name</a>
+                      <div class="meta">
+                        <span class="cinema">the date</span>
+                      </div>
+                      <div class="description">
+                        <p>anything need</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui tiny image">
+                      <img src="/images/wireframe/image.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">class name</a>
+                      <div class="meta">
+                        <span class="cinema">the date</span>
+                      </div>
+                      <div class="description">
+                        <p>anything need</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui tiny image">
+                      <img src="/images/wireframe/image.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">class name</a>
+                      <div class="meta">
+                        <span class="cinema">the date</span>
+                      </div>
+                      <div class="description">
+                        <p>anything need</p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui dimmer modals page transition hidden">
+    <div class="ui small modal timetable transition hidden" style="margin-top: -175.5px;">
+        <table class="ui definition table">
+            <tbody>
+                <tr class="center aligned">
+                  <td class="Timetable__room"></td>
+                  <td>08:10 - 09:00</td><!--1-->
+                  <td>09:10 - 10:00</td><!--1-->
+                  <td>10:10 - 11:00</td><!--1-->
+                  <td>11:10 - 12:00</td><!--1-->
+                  <td>13:40 - 14:30</td><!--1-->
+                  <td>14:40 - 15:30</td><!--1-->
+                  <td>15:40 - 16:30</td><!--1-->
+                  <td>16:40 - 17:30</td><!--1-->
+                  <td>17:40 - 18:30</td><!--1-->
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Mon</td>
+                    <td colspan="2"><!--節數-->
+                    <div class="Allocation major">
+                      <span class="Allocation__title">major</span>
+                      <span class="Allocation__tutor">classroom</span>
+                    </div>
+                    </td>
+                    <td colspan="2">
+                    <div class="Allocation elective">
+                      <span class="Allocation__title">elective</span>
+                      <span class="Allocation__tutor">classroom</span>
+                    </div>
+                    </td>
+                    <td colspan="3">
+                    <div class="Allocation sports">
+                      <span class="Allocation__title">sports</span>
+                      <span class="Allocation__tutor">classroom</span>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="Timetable__room center aligned">Tue</td>
+                  <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Wed</td>
+                    <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Thu</td>
+                    <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Fri</td>
+                    <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Sat</td>
+                    <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="Timetable__room center aligned">Sun</td>
+                    <td colspan="1"></td>
+                  <td colspan="2"><!--節數-->
+                    <div class="Allocation">
+                      <span class="Allocation__title">PDP</span>
+                      <span class="Allocation__tutor">Prof. Fred Cyber</span>
+                    </div>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4">
+                    <div class="Allocation">
+                      <span class="Allocation__title">SEO</span>
+                      <span class="Allocation__tutor">Dr. Joe Web</span>
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ui small modal edit transition hidden" style="margin-top: -141.5px;" z-index="500">
+        <div class="ui attached message">
+            <div class="header">新增考試</div>
+        </div>
+        <form class="ui form attached fluid segment">
+            <div class="fields">
+                <div class="field">
+                  <label>class name</label>
+                    <select class="ui dropdown segment">
+                    <option value="">classname</option>
+                    <option value="1">class 1</option>
+                    <option value="0">class 2</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>deadline</label><br>
+                    <input class="flatpickr" type="text" placeholder="Select Date.." disabled="disabled">
+                </div>
+                
+            </div>
+<!-- 
+            <div class="field">
+                <label>Tags</label>
+                <select name="tags" multiple="" class="ui fluid dropdown">
+                    <option value="">Tags</option>
+                    <option value="1">雞巴教授</option>
+                    <option value="0">幹</option>
+                </select>
+            </div>
+             -->
+            <div class="field">
+                <label>anything you want to say</label>
+                <textarea></textarea>
+            </div>
+            <br><br>
+            <div class="ui blue submit button">確認</div>
+        </form>
+
+    </div>
+</div>
+

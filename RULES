@@ -1,0 +1,11 @@
+1.每個人都使用自己的 branch (push/pull)
+
+2.確定功能正常，開啟一個 Merge Request 到 Master( Source Branch: 要放到Master的Branch  /  Target : Master)
+http://repo.tenoz.asia/laviiiii/Campus/merge_requests/new?merge_request%5Bsource_branch%5D=你的BRANCH
+
+3.如果要拉其他人的程式碼，請他先做第二項，他完成第二項後，再開啟一個 Marge Request 去抓取Master的程式碼
+ ( Source Branch: Master   /  Target : 要取得程式碼的branch )，最後再 git pull
+http://repo.tenoz.asia/laviiiii/Campus/merge_requests/new?merge_request%5Bsource_branch%5D=master
+
+
+

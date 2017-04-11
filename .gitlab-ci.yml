@@ -1,0 +1,55 @@
+Campus-Master:
+    script:
+        - git checkout master
+        - git pull -f origin master
+        - git push -f dev master
+    only:
+        - master
+Campus-Shawm:
+    script:
+        - git checkout shawm
+        - git pull -f origin shawm
+        - git push -f dev shawm
+    only:
+        - shawm
+
+Campus-Lavi:
+    script:
+        - git checkout lavi
+        - git pull -f origin lavi
+        - git push -f dev lavi
+    only:
+        - lavi
+
+Campus-Peng:
+    script:
+        - git checkout walala
+        - git pull -f origin walala
+        - git push -f dev walala
+    only:
+        - walala
+
+Campus-Xiao:
+    script:
+        - git checkout xiao
+        - git pull -f origin xiao
+        - git push -f dev xiao
+    only:
+        - xiao
+
+Campus-Caspar:
+    script:
+        - git checkout caspar
+        - git pull -f origin caspar
+        - git push -f dev caspar
+    only:
+        - caspar
+
+Production:
+    stage: deploy
+    script:
+        - git checkout master
+        - git pull -f origin master
+        - git push -f production master
+    only:
+        - master
